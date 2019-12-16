@@ -1,0 +1,19 @@
+{
+  "name": "isp_navbar",
+  "version": "1.0.0",
+  "description": "Your package description",
+  "scripts": {
+    "test": "command for testing package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SacredWay/isp_report_table.git"
+  },
+  "author": "me",
+  "license": "MIT",
+  "main": "IspReportTable.vue",
+  "bugs": {
+    "url": "https://https://github.com/SacredWay/isp_report_table/issues"
+  },
+  "homepage": "https://github.com/SacredWay/isp_report_table"
+}
