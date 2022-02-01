@@ -19,7 +19,7 @@
                 <div class="col-12 p-0 d-flex justify-content-center">
                     <div class="profile-img-container">
                         <img :src="img" alt="">
-                    </div>123
+                    </div>
                 </div>
                 <div class="profile-name-container">{{user.name}} {{user.surname}}</div>
                 <div class="profile-email-container">{{user.email}}</div>
@@ -54,6 +54,16 @@
                             Расчет КП
                         </div>
                     </div>
+                  <div class="menu-item" title="Контроль стоимости" v-if="user.role_id === 3" v-on:click="openCostControl">
+                    <div class="menu-item-icon-container">
+                      <div class="img-wrapper">
+                        <font-awesome-icon :icon="['fas', 'calculator']"/>
+                      </div>
+                    </div>
+                    <div class="menu-item-description-container">
+                      Контроль стоимости
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -121,7 +131,10 @@
             },
             openComputation() {
                 location.href = 'https://computation.isp.team/';
-            }
+            },
+          openCostControl() {
+            location.href = 'https://computation.isp.team/edit-cost';
+          },
         }
     });
 </script>
