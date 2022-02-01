@@ -19,7 +19,7 @@
                 <div class="col-12 p-0 d-flex justify-content-center">
                     <div class="profile-img-container">
                         <img :src="img" alt="">
-                    </div>
+                    </div>123
                 </div>
                 <div class="profile-name-container">{{user.name}} {{user.surname}}</div>
                 <div class="profile-email-container">{{user.email}}</div>
